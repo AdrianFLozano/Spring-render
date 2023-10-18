@@ -1,0 +1,5 @@
+FROM openjdk:17 as build
+COPY Carros/out/artifacts/Carros_jar/Carros.jar carros.jar
+EXPOSE 8080
+CMD ["java","-jar","\Carros\out\artifacts\Carros_jar\Carros.jar"]
+
